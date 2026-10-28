@@ -10,8 +10,8 @@
       "Star a show and its new episodes join your Queue on their own. Press play, put your phone away, and Echo works through it in order."
     ],
     [
-      "Skip your way",
-      "Set skip back and skip forward separately, from 10 seconds up to a minute and a half. Give each show its own: long jumps past the ads on one, short hops back on another. A show can keep its own speed and download rules too."
+      "Skip Length, your way",
+      "Set Skip Length for skipping back and forward separately, from 10 seconds up to a minute and a half. Give each show its own: long jumps past the ads on one, short hops back on another. A show can keep its own speed and download rules too."
     ],
     [
       "Voice Boost and Trim Silence",
@@ -52,5 +52,13 @@
       "Sync (monthly or yearly)",
       "Use Echo on all your devices, your phone and tablet alike. Your library, progress and Queue stay in step between them as you listen, and a new phone picks up right where you left off. Coming soon with Sync: connect your own AI app, so you can talk to it about your shows and listening and it can make changes when you say so. Includes Daily Backup."
     ]
-  ]
+  ],
+  "shotLabels": {
+    "1-queue.jpg": "A Queue that fills itself",
+    "2-now-playing.jpg": "Voice Boost, sleep and bookmarks",
+    "3-add-discover.jpg": "Find new shows",
+    "4-library.jpg": "Your library",
+    "5-skip-interval.jpg": "Skip Length for each show",
+    "6-themes.jpg": "Pick your look"
+  }
 }

@@ -121,13 +121,30 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 </header>
 
 <main>
+  <section aria-label="Screenshots">
+    <div class="wrap">
+      <div class="shotbox">
+        <button class="nav prev" type="button" aria-label="Previous screenshot" hidden>‹</button>
+        <div class="shots" tabindex="0" aria-label="Screenshots, swipe for more">
+        <figure><div class="phone"><img src="shots/1-queue.jpg" alt="Echo: A Queue that fills itself" loading="lazy" width="1220" height="2712"></div><figcaption>A Queue that fills itself</figcaption></figure>
+        <figure><div class="phone"><img src="shots/2-now-playing.jpg" alt="Echo: Voice Boost, sleep and bookmarks" loading="lazy" width="1220" height="2712"></div><figcaption>Voice Boost, sleep and bookmarks</figcaption></figure>
+        <figure><div class="phone"><img src="shots/3-add-discover.jpg" alt="Echo: Find new shows" loading="lazy" width="1220" height="2712"></div><figcaption>Find new shows</figcaption></figure>
+        <figure><div class="phone"><img src="shots/4-library.jpg" alt="Echo: Your library" loading="lazy" width="1220" height="2712"></div><figcaption>Your library</figcaption></figure>
+        <figure><div class="phone"><img src="shots/5-skip-interval.jpg" alt="Echo: Skip Length for each show" loading="lazy" width="1220" height="2712"></div><figcaption>Skip Length for each show</figcaption></figure>
+        <figure><div class="phone"><img src="shots/6-themes.jpg" alt="Echo: Pick your look" loading="lazy" width="1220" height="2712"></div><figcaption>Pick your look</figcaption></figure>
+        </div>
+        <button class="nav next" type="button" aria-label="Next screenshot" hidden>›</button>
+      </div>
+      <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+  </section>
 
   <section id="features">
     <div class="wrap">
       <h2>What it does</h2>
       <ul class="features">
         <li><span class="n">1</span><h3>A Queue that fills itself</h3><p>Star a show and its new episodes join your Queue on their own. Press play, put your phone away, and Echo works through it in order.</p></li>
-        <li><span class="n">2</span><h3>Skip your way</h3><p>Set skip back and skip forward separately, from 10 seconds up to a minute and a half. Give each show its own: long jumps past the ads on one, short hops back on another. A show can keep its own speed and download rules too.</p></li>
+        <li><span class="n">2</span><h3>Skip Length, your way</h3><p>Set Skip Length for skipping back and forward separately, from 10 seconds up to a minute and a half. Give each show its own: long jumps past the ads on one, short hops back on another. A show can keep its own speed and download rules too.</p></li>
         <li><span class="n">3</span><h3>Voice Boost and Trim Silence</h3><p>Voice Boost evens out the volume, so a quiet guest sounds as close as a loud host. Trim Silence shortens long pauses, so episodes finish sooner without anyone sounding sped up.</p></li>
         <li><span class="n">4</span><h3>Bookmarks and a sleep timer</h3><p>Save a moment in one tap and jump back to it later. The sleep timer stops after 30 or 60 minutes, at the end of the episode, or at a time you pick.</p></li>
         <li><span class="n">5</span><h3>Find shows and single episodes</h3><p>Search by name, browse categories or the top charts, or paste a private feed link from a paid service. Search Episodes finds an episode on any topic without following the whole show.</p></li>
@@ -180,6 +197,27 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   draw(); window.addEventListener('resize', function () { x.setTransform(1, 0, 0, 1, 0, 0); draw(); });
 })();
 </script>
-
+<script>
+(() => {
+  const s = document.querySelector('.shots'); if (!s) return;
+  const figs = [...s.children], dots = [...document.querySelectorAll('.dots i')];
+  const prev = document.querySelector('.nav.prev'), next = document.querySelector('.nav.next');
+  const step = () => figs[0].getBoundingClientRect().width + 18;
+  function update() {
+    const max = s.scrollWidth - s.clientWidth;
+    const fits = max < 4;
+    document.querySelector('.dots').hidden = fits;
+    prev.hidden = fits || s.scrollLeft < 4;
+    next.hidden = fits || s.scrollLeft > max - 4;
+    const i = Math.round(s.scrollLeft / step());
+    dots.forEach((d, k) => d.classList.toggle('on', k === Math.min(i, dots.length - 1)));
+  }
+  prev.onclick = () => s.scrollBy({ left: -step() });
+  next.onclick = () => s.scrollBy({ left: step() });
+  s.addEventListener('scroll', update, { passive: true });
+  addEventListener('resize', update);
+  update();
+})();
+</script>
 </body>
 </html>
