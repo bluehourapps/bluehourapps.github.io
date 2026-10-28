@@ -28,6 +28,10 @@
     [
       "See what you got done",
       "The Metrics tab adds up what you've added and finished, plus the cost and time spent, by category, list or person."
+    ],
+    [
+      "Ask your own AI about it (coming soon)",
+      "Connect the AI app you already use, then ask it what is overdue, or tell it to add a job or check one off. It makes changes only when you say so, and you can see everything it read and did."
     ]
   ],
   "plans": [

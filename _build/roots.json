@@ -28,6 +28,10 @@
     [
       "Harvests and seasons, kept for good",
       "Log each harvest from the plant you picked it from, at what it would have cost in the store. When a season ends, Roots writes a report: your best crop, your most productive bed and what to try next year."
+    ],
+    [
+      "Ask your own AI about it (coming soon)",
+      "Connect the AI app you already use, then ask it what needs doing in the garden this week, or have it log a planting. It makes changes only when you say so, and you can see everything it read and did."
     ]
   ],
   "data": [
