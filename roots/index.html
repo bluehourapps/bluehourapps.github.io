@@ -61,7 +61,16 @@ p { margin: 0 0 14px; }
 a { color: var(--accent); }
 
 /* screenshots: a swipeable strip of phones */
-.shots { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 6px 2px 18px; scrollbar-width: thin; }
+.shots { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 6px 2px 14px; scrollbar-width: none; scroll-behavior: smooth; }
+.shots::-webkit-scrollbar { display: none; }
+.shotbox { position: relative; }
+.nav { position: absolute; top: calc(50% - 30px); width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: 600 1.5rem/1 var(--f-body); cursor: pointer; box-shadow: 0 6px 18px rgba(10,20,40,.18); z-index: 1; }
+.nav.prev { left: -6px; } .nav.next { right: -6px; }
+.nav:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.dots { display: flex; justify-content: center; gap: 7px; margin-top: 2px; }
+.dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--line); transition: background .2s, width .2s; }
+.dots i.on { background: var(--app); width: 18px; border-radius: 4px; }
+@media (hover: none) { .nav { display: none; } }
 .shots figure { flex: 0 0 auto; width: min(230px, 62vw); margin: 0; scroll-snap-align: start; }
 .phone { border-radius: 26px; padding: 7px; background: #0b1220; box-shadow: 0 14px 34px rgba(10,20,40,.22), 0 0 0 1px var(--line); }
 .phone img { display: block; width: 100%; border-radius: 20px; aspect-ratio: 1220 / 2712; object-fit: cover; background: #111; }
@@ -114,13 +123,18 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 <main>
   <section aria-label="Screenshots">
     <div class="wrap">
-      <div class="shots" tabindex="0" aria-label="Screenshots, swipe for more">
-        <figure><div class="phone"><img src="shots/1-garden.jpg" alt="Roots: Your garden map" loading="lazy" width="1220" height="2712"></div><figcaption>Your garden map</figcaption></figure>
-        <figure><div class="phone"><img src="shots/2-bed.jpg" alt="Roots: Every bed, plant by plant" loading="lazy" width="1220" height="2712"></div><figcaption>Every bed, plant by plant</figcaption></figure>
-        <figure><div class="phone"><img src="shots/3-today-weather.jpg" alt="Roots: Today and the weather" loading="lazy" width="1220" height="2712"></div><figcaption>Today and the weather</figcaption></figure>
-        <figure><div class="phone"><img src="shots/4-plant-guide.jpg" alt="Roots: A guide for each plant" loading="lazy" width="1220" height="2712"></div><figcaption>A guide for each plant</figcaption></figure>
-        <figure><div class="phone"><img src="shots/5-plant-library.jpg" alt="Roots: Plants for your zone" loading="lazy" width="1220" height="2712"></div><figcaption>Plants for your zone</figcaption></figure>
+      <div class="shotbox">
+        <button class="nav prev" type="button" aria-label="Previous screenshot" hidden>‹</button>
+        <div class="shots" tabindex="0" aria-label="Screenshots, swipe for more">
+        <figure><div class="phone"><img src="shots/1-today.jpg" alt="Roots: Today and the weather" loading="lazy" width="1220" height="2712"></div><figcaption>Today and the weather</figcaption></figure>
+        <figure><div class="phone"><img src="shots/2-garden.jpg" alt="Roots: Your garden map" loading="lazy" width="1220" height="2712"></div><figcaption>Your garden map</figcaption></figure>
+        <figure><div class="phone"><img src="shots/3-bed.jpg" alt="Roots: Every bed, plant by plant" loading="lazy" width="1220" height="2712"></div><figcaption>Every bed, plant by plant</figcaption></figure>
+        <figure><div class="phone"><img src="shots/4-plants.jpg" alt="Roots: Plants for your zone" loading="lazy" width="1220" height="2712"></div><figcaption>Plants for your zone</figcaption></figure>
+        <figure><div class="phone"><img src="shots/5-plant-guide.jpg" alt="Roots: A guide for each plant" loading="lazy" width="1220" height="2712"></div><figcaption>A guide for each plant</figcaption></figure>
+        </div>
+        <button class="nav next" type="button" aria-label="Next screenshot" hidden>›</button>
       </div>
+      <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
     </div>
   </section>
 
@@ -180,6 +194,28 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
     }
   }
   draw(); window.addEventListener('resize', function () { x.setTransform(1, 0, 0, 1, 0, 0); draw(); });
+})();
+</script>
+<script>
+(() => {
+  const s = document.querySelector('.shots'); if (!s) return;
+  const figs = [...s.children], dots = [...document.querySelectorAll('.dots i')];
+  const prev = document.querySelector('.nav.prev'), next = document.querySelector('.nav.next');
+  const step = () => figs[0].getBoundingClientRect().width + 18;
+  function update() {
+    const max = s.scrollWidth - s.clientWidth;
+    const fits = max < 4;
+    document.querySelector('.dots').hidden = fits;
+    prev.hidden = fits || s.scrollLeft < 4;
+    next.hidden = fits || s.scrollLeft > max - 4;
+    const i = Math.round(s.scrollLeft / step());
+    dots.forEach((d, k) => d.classList.toggle('on', k === Math.min(i, dots.length - 1)));
+  }
+  prev.onclick = () => s.scrollBy({ left: -step() });
+  next.onclick = () => s.scrollBy({ left: step() });
+  s.addEventListener('scroll', update, { passive: true });
+  addEventListener('resize', update);
+  update();
 })();
 </script>
 </body>

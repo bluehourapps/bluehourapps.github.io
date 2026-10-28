@@ -78,7 +78,16 @@ p { margin: 0 0 14px; }
 a { color: var(--accent); }
 
 /* screenshots: a swipeable strip of phones */
-.shots { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 6px 2px 18px; scrollbar-width: thin; }
+.shots { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 6px 2px 14px; scrollbar-width: none; scroll-behavior: smooth; }
+.shots::-webkit-scrollbar { display: none; }
+.shotbox { position: relative; }
+.nav { position: absolute; top: calc(50% - 30px); width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: 600 1.5rem/1 var(--f-body); cursor: pointer; box-shadow: 0 6px 18px rgba(10,20,40,.18); z-index: 1; }
+.nav.prev { left: -6px; } .nav.next { right: -6px; }
+.nav:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.dots { display: flex; justify-content: center; gap: 7px; margin-top: 2px; }
+.dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--line); transition: background .2s, width .2s; }
+.dots i.on { background: var(--app); width: 18px; border-radius: 4px; }
+@media (hover: none) { .nav { display: none; } }
 .shots figure { flex: 0 0 auto; width: min(230px, 62vw); margin: 0; scroll-snap-align: start; }
 .phone { border-radius: 26px; padding: 7px; background: #0b1220; box-shadow: 0 14px 34px rgba(10,20,40,.22), 0 0 0 1px var(--line); }
 .phone img { display: block; width: 100%; border-radius: 20px; aspect-ratio: 1220 / 2712; object-fit: cover; background: #111; }
@@ -131,9 +140,14 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 <main>
 ${shots.length ? `  <section aria-label="Screenshots">
     <div class="wrap">
-      <div class="shots" tabindex="0" aria-label="Screenshots, swipe for more">
+      <div class="shotbox">
+        <button class="nav prev" type="button" aria-label="Previous screenshot" hidden>‹</button>
+        <div class="shots" tabindex="0" aria-label="Screenshots, swipe for more">
 ${shots.map(f => `        <figure><div class="phone"><img src="shots/${f}" alt="${esc(cfg.name)}: ${esc(label(f))}" loading="lazy" width="1220" height="2712"></div><figcaption>${esc(label(f))}</figcaption></figure>`).join('\n')}
+        </div>
+        <button class="nav next" type="button" aria-label="Next screenshot" hidden>›</button>
       </div>
+      <div class="dots" aria-hidden="true">${shots.map(() => '<i></i>').join('')}</div>
     </div>
   </section>
 ` : ''}
@@ -169,6 +183,28 @@ ${cfg.data.map(p => Array.isArray(p) ? `        <h3>${esc(p[0])}</h3><p>${esc(p[
 <footer><div class="wrap">${esc(cfg.name)} is part of <a href="../">Blue Hour</a> · one person, two cats, no ads · Questions: contact@bluehourapps.dev</div></footer>
 
 ${stars}
+${shots.length ? `<script>
+(() => {
+  const s = document.querySelector('.shots'); if (!s) return;
+  const figs = [...s.children], dots = [...document.querySelectorAll('.dots i')];
+  const prev = document.querySelector('.nav.prev'), next = document.querySelector('.nav.next');
+  const step = () => figs[0].getBoundingClientRect().width + 18;
+  function update() {
+    const max = s.scrollWidth - s.clientWidth;
+    const fits = max < 4;
+    document.querySelector('.dots').hidden = fits;
+    prev.hidden = fits || s.scrollLeft < 4;
+    next.hidden = fits || s.scrollLeft > max - 4;
+    const i = Math.round(s.scrollLeft / step());
+    dots.forEach((d, k) => d.classList.toggle('on', k === Math.min(i, dots.length - 1)));
+  }
+  prev.onclick = () => s.scrollBy({ left: -step() });
+  next.onclick = () => s.scrollBy({ left: step() });
+  s.addEventListener('scroll', update, { passive: true });
+  addEventListener('resize', update);
+  update();
+})();
+</script>` : ''}
 </body>
 </html>
 `;

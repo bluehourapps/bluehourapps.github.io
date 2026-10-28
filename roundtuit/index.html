@@ -61,7 +61,16 @@ p { margin: 0 0 14px; }
 a { color: var(--accent); }
 
 /* screenshots: a swipeable strip of phones */
-.shots { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 6px 2px 18px; scrollbar-width: thin; }
+.shots { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 6px 2px 14px; scrollbar-width: none; scroll-behavior: smooth; }
+.shots::-webkit-scrollbar { display: none; }
+.shotbox { position: relative; }
+.nav { position: absolute; top: calc(50% - 30px); width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: 600 1.5rem/1 var(--f-body); cursor: pointer; box-shadow: 0 6px 18px rgba(10,20,40,.18); z-index: 1; }
+.nav.prev { left: -6px; } .nav.next { right: -6px; }
+.nav:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.dots { display: flex; justify-content: center; gap: 7px; margin-top: 2px; }
+.dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--line); transition: background .2s, width .2s; }
+.dots i.on { background: var(--app); width: 18px; border-radius: 4px; }
+@media (hover: none) { .nav { display: none; } }
 .shots figure { flex: 0 0 auto; width: min(230px, 62vw); margin: 0; scroll-snap-align: start; }
 .phone { border-radius: 26px; padding: 7px; background: #0b1220; box-shadow: 0 14px 34px rgba(10,20,40,.22), 0 0 0 1px var(--line); }
 .phone img { display: block; width: 100%; border-radius: 20px; aspect-ratio: 1220 / 2712; object-fit: cover; background: #111; }
@@ -171,5 +180,6 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   draw(); window.addEventListener('resize', function () { x.setTransform(1, 0, 0, 1, 0, 0); draw(); });
 })();
 </script>
+
 </body>
 </html>

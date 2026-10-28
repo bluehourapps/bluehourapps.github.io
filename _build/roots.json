@@ -54,10 +54,10 @@
     ]
   ],
   "shotLabels": {
-    "1-garden.jpg": "Your garden map",
-    "2-bed.jpg": "Every bed, plant by plant",
-    "3-today-weather.jpg": "Today and the weather",
-    "4-plant-guide.jpg": "A guide for each plant",
-    "5-plant-library.jpg": "Plants for your zone"
+    "1-today.jpg": "Today and the weather",
+    "2-garden.jpg": "Your garden map",
+    "3-bed.jpg": "Every bed, plant by plant",
+    "4-plants.jpg": "Plants for your zone",
+    "5-plant-guide.jpg": "A guide for each plant"
   }
 }
