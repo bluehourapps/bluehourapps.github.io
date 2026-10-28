@@ -52,5 +52,12 @@
       "Sync (monthly or yearly)",
       "Use Roots on all your devices, your phone and tablet alike. A change on one shows on the others, and a new phone has your whole garden. Coming soon with Sync: connect your own AI app, so you can talk to it about your garden and it can make changes when you say so. Includes Daily Backup."
     ]
-  ]
+  ],
+  "shotLabels": {
+    "1-garden.jpg": "Your garden map",
+    "2-bed.jpg": "Every bed, plant by plant",
+    "3-today-weather.jpg": "Today and the weather",
+    "4-plant-guide.jpg": "A guide for each plant",
+    "5-plant-library.jpg": "Plants for your zone"
+  }
 }
