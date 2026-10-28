@@ -34,5 +34,19 @@
     "Your library, Queue and listening history are stored on your phone, and Echo works with no account.",
     "If you choose the optional backup, it goes to a folder in your own Google Drive. The optional Sync keeps a copy on Echo's server so your devices all match."
   ],
-  "legal": false
+  "legal": false,
+  "plans": [
+    [
+      "Free",
+      "Every feature on your phone, with no ads and no account."
+    ],
+    [
+      "Google Drive Backup (a one-time purchase)",
+      "A backup of your library, Queue and history to your own Google Drive every day, and whenever you ask."
+    ],
+    [
+      "Echo Sync (monthly or yearly)",
+      "Your library kept in your account as you listen, so every device matches and a new phone picks up right where you left off. Includes the daily backup."
+    ]
+  ]
 }

@@ -34,5 +34,19 @@
     "Your garden lives on your phone. Daily Backup saves a copy to your own Google Drive, where only Roots can see the files it made.",
     "Weather comes from your ZIP code, never your phone's location."
   ],
-  "legal": false
+  "legal": false,
+  "plans": [
+    [
+      "Free",
+      "Every feature on your phone, with no sign-in needed."
+    ],
+    [
+      "Daily Backup (a one-time purchase)",
+      "Buy once and keep it for good: a copy of your garden to your own Google Drive every day, at a time you pick, and whenever you ask."
+    ],
+    [
+      "Sync (monthly or yearly)",
+      "Your garden saved to your account as you go, so a change on one device shows on the others and a new phone has it all. Includes Daily Backup."
+    ]
+  ]
 }
