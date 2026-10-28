@@ -30,7 +30,7 @@ const html = `<!doctype html>
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; }
-img { max-width: 100%; }
+img { max-width: 100%; height: auto; }
 /* Layout: the home page's dusk sky, then the app's own colour carries the screenshots and features. */
 :root {
   --sky-top: #0b1a33; --sky-mid: #1c3a6b; --sky-low: #4a74b4; --horizon: #b9cdea;
@@ -82,7 +82,8 @@ a { color: var(--accent); }
 .shots figure { flex: 0 0 auto; width: min(230px, 62vw); margin: 0; scroll-snap-align: start; }
 .phone { border-radius: 26px; padding: 7px; background: #0b1220; box-shadow: 0 14px 34px rgba(10,20,40,.22), 0 0 0 1px var(--line); }
 .phone img { display: block; width: 100%; border-radius: 20px; aspect-ratio: 1220 / 2712; object-fit: cover; background: #111; }
-.shots figcaption { font-size: .86rem; color: var(--muted); text-align: center; margin-top: 10px; text-transform: capitalize; }
+.shots figcaption { font-size: .86rem; color: var(--muted); text-align: center; margin-top: 10px; }
+.shots figcaption::first-letter { text-transform: uppercase; }
 
 /* features */
 .features { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
