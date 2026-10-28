@@ -1,0 +1,38 @@
+{
+  "name": "Roots",
+  "color": "#9b4f8e",
+  "eyebrow": "Garden planner for Android",
+  "pitch": "A garden that remembers every bed, plant and harvest.",
+  "lead": "A garden that remembers every bed, plant and harvest. Map your yard, plan each bed, and let the forecast tell you when to water.",
+  "features": [
+    [
+      "Your yard, mapped",
+      "Draw your real garden from above: beds, trees, sheds, fences and irrigation, each snapped to a quarter-foot grid. Tap a bed to see exactly what grows where inside it."
+    ],
+    [
+      "Real sun, real shade",
+      "Set which way your yard faces, and Roots works out each bed's sun hours from the sun's path where you live and the shadows your own trees cast. Then it tells you which bed suits which plant."
+    ],
+    [
+      "Plan a bed in seconds",
+      "Pick a plant, say how many and how far apart, and Arrange spaces them evenly across the bed. Nudge any plant by hand, then plant them one at a time or all at once."
+    ],
+    [
+      "Watering that reads the forecast",
+      "Each week Roots checks the coming days' heat, humidity and rain, and works out which days each bed needs water and roughly how many gallons. Frost and heat alerts name the beds at risk."
+    ],
+    [
+      "Reminders that repeat like a calendar",
+      "Daily, weekly, every few days or any custom pattern, each linked to a bed or a single plant. A month calendar shows what's due, and a ticked reminder comes back on its next date."
+    ],
+    [
+      "Harvests and seasons, kept for good",
+      "Log each harvest from the plant you picked it from, at what it would have cost in the store. When a season ends, Roots writes a report: your best crop, your most productive bed and what to try next year."
+    ]
+  ],
+  "data": [
+    "Your garden lives on your phone. Daily Backup saves a copy to your own Google Drive, where only Roots can see the files it made.",
+    "Weather comes from your ZIP code, never your phone's location."
+  ],
+  "legal": false
+}

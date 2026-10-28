@@ -1,0 +1,56 @@
+{
+  "name": "Lattice",
+  "color": "#6f8ff0",
+  "eyebrow": "Health tracker for Android",
+  "pitch": "Your whole health picture, kept on your phone.",
+  "lead": "Workouts, food, weight, sleep, lab results and more in one place, on your phone. There's no account on someone else's server and nothing to sync to a company database. Your data lives on your phone, and backups go to your own Google Drive.",
+  "featuresTitle": "What it does",
+  "features": [
+    [
+      "A food diary that keeps up",
+      "Search a big food database, scan a barcode, or photograph a label, and log it to your meals in a couple of taps. I mark a day complete when I'm done, so I know which days count."
+    ],
+    [
+      "Workouts you can follow",
+      "Build routines, run a session with a rest timer, and see every set you've ever done. Personal bests and strength trends show up on their own."
+    ],
+    [
+      "Body and labs in one place",
+      "Weight, body measurements, blood pressure and your lab results, each with a chart over time. Typing a lab value in once is enough to see where it's heading."
+    ],
+    [
+      "Health Connect, read on your phone",
+      "Steps, sleep, heart rate and glucose from the apps you already use come in through Android's Health Connect. They stay on the phone; nothing goes to a server."
+    ],
+    [
+      "A Daily Backup to your own Drive",
+      "For a one-time price, Lattice saves a backup to your Google Drive every day. It can only see the files it makes itself."
+    ],
+    [
+      "Ask your own AI about it (coming soon)",
+      "With Lattice Connect, your AI app can read your data and suggest changes. Nothing changes until you approve it, and you can see everything it read and did."
+    ]
+  ],
+  "plans": [
+    [
+      "Free",
+      "The whole app on your phone, with no ads."
+    ],
+    [
+      "Daily Backup (a one-time purchase)",
+      "A backup to your own Google Drive every day, and whenever you ask."
+    ],
+    [
+      "Lattice Connect (monthly or yearly)",
+      "Connect Lattice to your own AI app, so you can ask it about your data. When it suggests a change, nothing happens until you approve it there."
+    ]
+  ],
+  "data": [
+    "Your data lives on your phone, and backups go to your own Google Drive.",
+    [
+      "Why Google sign-in",
+      "Signing in with Google lets Lattice save its backup in your Google Drive. Lattice asks Google only for the files it creates itself. It can't see anything else in your Drive, your Gmail or your contacts."
+    ]
+  ],
+  "legal": true
+}

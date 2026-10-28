@@ -1,0 +1,42 @@
+{
+  "name": "Echo",
+  "color": "#3fcfbd",
+  "eyebrow": "Podcast player for Android",
+  "pitch": "A podcast player you can set up once and leave in your pocket.",
+  "lead": "A podcast player you can set up once and leave in your pocket. New episodes line up on their own, voices come through clearly, and it works with no account.",
+  "features": [
+    [
+      "A Queue that fills itself",
+      "Star a show and its new episodes join your Queue on their own. Press play, put your phone away, and Echo works through it in order."
+    ],
+    [
+      "Skip your way",
+      "Set skip back and skip forward separately, from 10 seconds up to a minute and a half. Give each show its own: long jumps past the ads on one, short hops back on another."
+    ],
+    [
+      "Voice Boost and Trim Silence",
+      "Voice Boost evens out the volume, so a quiet guest sounds as close as a loud host. Trim Silence shortens long pauses, so episodes finish sooner without anyone sounding sped up."
+    ],
+    [
+      "Your settings, show by show",
+      "Each show can keep its own speed and download rules too. Press and hold a control in the player to make it that show's default."
+    ],
+    [
+      "Bookmarks and a sleep timer",
+      "Save a moment in one tap and jump back to it later. The sleep timer stops after 30 or 60 minutes, at the end of the episode, or at a time you pick."
+    ],
+    [
+      "Find shows and single episodes",
+      "Search by name, browse categories or the top charts, or paste a private feed link from a paid service. Search Episodes finds an episode on any topic without following the whole show."
+    ],
+    [
+      "Lock screen, home screen and car",
+      "Control Echo from the lock screen, earbuds or Android Auto, and add home-screen widgets for your Queue, a playlist, new episodes or your listening stats."
+    ]
+  ],
+  "data": [
+    "Your library, Queue and listening history are stored on your phone, and Echo works with no account.",
+    "If you choose the optional backup, it goes to a folder in your own Google Drive. The optional Sync keeps a copy on Echo's server so your devices all match."
+  ],
+  "legal": false
+}
