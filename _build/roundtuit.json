@@ -2,24 +2,51 @@
   "name": "Roundtuit",
   "color": "#e9a93a",
   "eyebrow": "To-do list for Android",
-  "pitch": "For the things you'll do when you get a round tuit.",
-  "lead": "A to-do and honey-do list for the things you'll do when you get a round tuit. Keep your own list, let the people you live with ask you for things, and finally see what got done.",
+  "pitch": "The to-do list for jobs you'll get to eventually.",
+  "lead": "The to-do list for jobs you'll get to eventually. Keep your own list, share one with the people you live with, and let them ask you for things.",
   "features": [
-    ["Ask me for a Roundtuit", "The people in your life can ask you for things from their own phone. Their requests land on your list with their name on them."],
-    ["Shared lists that stay in step", "Make a list with your household for groceries, chores or a project. Everyone adds and ticks things off, and a change shows on everyone's phone within a second or two."],
-    ["Repeats that work like a calendar", "Every Saturday, or every month on the 15th. A repeating task puts a fresh copy on your list each time it comes due."],
-    ["Reminders when you want them", "Give a task a due date and pick when it reminds you. Tick it off and the reminder clears, on every phone that had it."],
-    ["Everything about a task, if you want it", "Category, who asked, due date, notes, cost and time spent. Switch off the fields you don't use, and each category can show its own."],
-    ["See what got done", "Metrics shows how many tasks you finished, what they cost, how long they took and how often you were on time, for any list, person or stretch of time."]
+    [
+      "Everything has a place",
+      "Sort jobs into categories like Home, Garden or Errands, then add your own. Each task can carry a due date, notes, cost and time spent."
+    ],
+    [
+      "Chores that come back",
+      "Set a task to repeat every Saturday or on the 15th of each month, and a fresh copy shows up on its day. Unfinished copies stay on the list, so nothing quietly disappears."
+    ],
+    [
+      "Reminders when you want them",
+      "Any task with a due date can remind you at the time you choose, and a reminder goes away once the task is done."
+    ],
+    [
+      "Lists you share",
+      "Share a list with the people you live with, and everyone sees the same jobs and who checked them off. Each person uses their own phone and their own account."
+    ],
+    [
+      "Let people ask",
+      "Give someone the right to ask you for things. Their requests land on your list in the category you picked, and they can see when each one is done."
+    ],
+    [
+      "See what you got done",
+      "The Metrics tab adds up what you've added and finished, plus the cost and time spent, by category, list or person."
+    ]
   ],
   "plans": [
-    ["Free", "The whole list on your phone, with no ads and no account."],
-    ["Daily Backup (a one-time purchase)", "A backup to your own Google Drive every day, and whenever you ask."],
-    ["Sync (monthly or yearly)", "Your list on every device, plus making shared lists and inviting people to ask you for things."]
+    [
+      "Free",
+      "The whole list on your phone, with no ads and no account."
+    ],
+    [
+      "Daily Backup (a one-time purchase)",
+      "A backup to your own Google Drive every day, and whenever you ask."
+    ],
+    [
+      "Sync (monthly or yearly)",
+      "Your list on every device, plus making shared lists and inviting people to ask you for things."
+    ]
   ],
   "data": [
-    "On Free your list lives on your phone. Daily Backup saves a copy to your own Google Drive, where Roundtuit can see only the files it made.",
-    "Sync keeps your list on Roundtuit's server so your devices all match and shared lists work. When Sync ends, your list moves back to your phone."
+    "Your tasks and categories are kept on your phone. If you turn on Daily Backup, a copy goes to your own Google Drive.",
+    "If you choose Sync, your list is kept in Roundtuit's online database so it follows you to a new phone and your devices all match. There are no ads, analytics or tracking."
   ],
   "legal": false
 }
