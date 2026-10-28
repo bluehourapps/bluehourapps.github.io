@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "updated": "2026-10-28",
+  "rule": "Each company's middle model: not its biggest or smallest. Apps read this at start, remember it, and fall back to the names built into the app.",
+  "models": {
+    "anthropic": { "id": "claude-sonnet-5-5", "name": "Claude Sonnet 5.5" },
+    "openai": { "id": "gpt-6.1-sol", "name": "GPT-6.1 Sol" },
+    "google": { "id": "gemini-3.8-flash", "name": "Gemini 3.8 Flash" }
+  },
+  "sources": {
+    "anthropic": "https://platform.claude.com/docs/en/models/overview",
+    "openai": "https://developers.openai.com/api/docs/models",
+    "google": "https://ai.google.dev/gemini-api/docs/models"
+  }
+}

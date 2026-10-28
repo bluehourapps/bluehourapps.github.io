@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lattice: Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --bg: #f4f6fb; --fg: #151a2b; --muted: #5b6480; --accent: #2f6bff; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0b1020; --fg: #e8ecf5; --muted: #a3acc6; --accent: #6f97ff; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.1rem; margin: 28px 0 6px; }
+  .muted { color: var(--muted); font-size: 0.9rem; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Lattice: Privacy Policy</h1>
+  <p class="muted">Last updated 2026-10-27</p>
+
+  <p>Short version: your health data stays on your phone and in your own Google Drive. I don't run a database that holds it, I don't sell anything about you, and there are no ads, analytics or crash-reporting tools in the app.</p>
+
+  <h2>On your phone</h2>
+  <p>Everything you log or connect (workouts, food, weight, sleep, lab results, readings from Health Connect and the rest) is stored on your phone. Uninstalling Lattice or using Delete All Data in Settings removes it.</p>
+
+  <h2>Google sign-in and your Drive</h2>
+  <ul>
+    <li>Signing in gives Lattice your Google account's name, email address and account id, and permission to the files Lattice creates in your Drive (Google's <code>drive.file</code> permission). It can't see your other files, your Gmail or your contacts.</li>
+    <li>With Daily Backup, Lattice saves a copy of its data to your Drive every day and whenever you ask. That copy is yours: it sits in your Drive, and you can delete it there at any time.</li>
+  </ul>
+
+  <h2>Lattice Connect (optional)</h2>
+  <ul>
+    <li>When you add Lattice to your AI app, a small connector run by Blue Hour on Google Cloud reads your Lattice backup in your Drive each time your AI app asks for it, and passes it to your AI app. The connector keeps no copy of your data and has no database. Its logs hold only codes, counts and timings.</li>
+    <li>What your AI app does with what it reads is covered by that app's own privacy policy.</li>
+    <li>If your AI app suggests a change, nothing changes until you approve it there. Lattice then applies it on your phone. To let Lattice know, the connector sends your phone a silent signal through Google's Firebase Cloud Messaging. The signal carries no health data, only "there's a change waiting".</li>
+    <li>You can disconnect at any time, in your AI app or in your Google account's third-party access settings.</li>
+  </ul>
+
+  <h2>Other things that leave the phone</h2>
+  <ul>
+    <li>Photo reading, optional: if you save your own key for an AI provider (Anthropic, OpenAI or Google) and ask Lattice to read a nutrition label, a supplement label or a lab-result screenshot, that one photo goes straight from your phone to that provider. Nothing else goes with it, and Lattice doesn't keep the photo.</li>
+    <li>Food search: typed search words go to USDA FoodData Central, and a scanned barcode number goes to Open Food Facts. No diary entries are sent.</li>
+    <li>Purchases: Google Play handles payment, and I never see your card. RevenueCat, the service that tracks which plan you have, gets your purchase records and your Google account id.</li>
+  </ul>
+
+  <h2>What I don't do</h2>
+  <p>No ads, no selling or sharing data for advertising, no analytics or crash-reporting tools, no location tracking.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>View, export or delete everything in the app, under Settings.</li>
+    <li>Delete the backup in your Google Drive.</li>
+    <li>Remove Lattice's access to your Google account: Google Account → Security → Third-party access → Lattice → Remove access.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Lattice is meant for people 18 and older.</p>
+
+  <h2>Changes and contact</h2>
+  <p>If this policy changes, the date at the top changes too. Questions: <a href="mailto:bluehourapps@gmail.com">bluehourapps@gmail.com</a></p>
+
+  <p class="muted"><a href="./">Lattice home</a> · <a href="terms.html">Terms of use</a></p>
+</main>
+</body>
+</html>
