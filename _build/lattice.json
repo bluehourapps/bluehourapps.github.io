@@ -85,5 +85,19 @@
       "Signing in with Google lets Lattice save its backup in your Google Drive. Lattice asks Google only for the files it creates itself. It can't see anything else in your Drive, your Gmail or your contacts."
     ]
   ],
-  "legal": true
+  "legal": true,
+  "shotLabels": {
+    "1-home.jpg": "Your day at a glance",
+    "2-train.jpg": "Your routines",
+    "3-train-session.jpg": "Every set, every PR",
+    "4-train-history.jpg": "Every workout you have done",
+    "5-diary.jpg": "A food diary that keeps up",
+    "6-diary-my-foods.jpg": "Add a food in seconds",
+    "7-body.jpg": "Your body log",
+    "8-trends.jpg": "Trends over time",
+    "9-provider-report.jpg": "A report for your provider",
+    "10-labs.jpg": "Your labs over the years",
+    "11-supplements.jpg": "Your supplements",
+    "12-goals.jpg": "Goals and TDEE"
+  }
 }
