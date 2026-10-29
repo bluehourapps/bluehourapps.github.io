@@ -7,27 +7,15 @@
   "features": [
     [
       "A Queue that fills itself, in your order",
-      "Star a show and its new episodes join your Queue on their own. Sort it by date published (newest or oldest), episode length (shortest or longest), podcast name, podcast author, or auto-queued before hand-picked. Stack several sorts at once and drag them into the order that matters most."
+      "Star a show and its new episodes join your Queue on their own. Sort it by date, episode length, podcast name or author, or auto-queued first, and stack several sorts in the order you want."
     ],
     [
       "Skip Length, your way",
-      "Set Skip Length for skipping back separately from skipping ahead, from 10 seconds up to a minute and a half."
+      "Ever skipped ahead too far, when you only needed a few seconds back? Set skip forward and skip back to different lengths, anywhere from 10 seconds up to a minute and a half."
     ],
     [
       "Every show, its own settings",
       "Give each show its own Skip Length, playback speed, Trim Silence and auto-download settings: long jumps past the ads and 1.5x on one, short hops back at normal speed on another, and new episodes downloaded only for the shows you want."
-    ],
-    [
-      "Bookmarks and a sleep timer",
-      "Save a moment in one tap and jump back to it later. The sleep timer stops after 30 or 60 minutes, at the end of the episode, or at a time you pick."
-    ],
-    [
-      "Find shows and single episodes",
-      "Search by name, browse categories or the top charts, or paste a private feed link from a paid service. Search Episodes finds an episode on any topic without following the whole show."
-    ],
-    [
-      "Lock screen, home screen and car",
-      "Control Echo from the lock screen, earbuds or Android Auto, and add home-screen widgets for your Queue, a playlist, new episodes or your listening stats."
     ],
     [
       "Playlists for anything",
@@ -35,7 +23,23 @@
     ],
     [
       "Stats and Listening History",
-      "See your listening time, shows listened, episodes completed and the time you saved with faster speeds, skipped ads and Trim Silence, for today, this week, this month, this year or all time, plus a calendar of your listening and your top 10 shows. Listening History lists every episode you played, searchable by show, episode or date, so you can pick up where you left off."
+      "Stats shows your listening time, episodes finished and the time you saved with faster speeds and Trim Silence, plus your top 10 shows. Listening History finds any episode you played, so you can pick up where you left off."
+    ],
+    [
+      "Your paid podcasts too",
+      "Pay for a show through a service like Wondery+ or NPR+? Your subscription comes with a private RSS feed link. Tap Have an RSS?, paste it in, and your paid episodes play in Echo like any other show."
+    ],
+    [
+      "Bookmarks and a sleep timer",
+      "Save a moment in one tap and jump back to it later. The sleep timer stops after 30 or 60 minutes, at the end of the episode, or at a time you pick."
+    ],
+    [
+      "Find shows and single episodes",
+      "Search by name, browse categories or the top charts, or use Search Episodes to find an episode on any topic without following the whole show."
+    ],
+    [
+      "Lock screen, home screen and car",
+      "Control Echo from the lock screen, earbuds or Android Auto, and add home-screen widgets for your Queue, a playlist, new episodes or your listening stats."
     ]
   ],
   "data": [
