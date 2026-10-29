@@ -6,16 +6,16 @@
   "lead": "A podcast player you can set up once and leave in your pocket. New episodes line up on their own, voices come through clearly, and it works with no account.",
   "features": [
     [
-      "A Queue that fills itself",
-      "Star a show and its new episodes join your Queue on their own. Press play, put your phone away, and Echo works through it in order."
+      "A Queue that fills itself, in your order",
+      "Star a show and its new episodes join your Queue on their own. Sort it by date published (newest or oldest), episode length (shortest or longest), podcast name, podcast author, or auto-queued before hand-picked. Stack several sorts at once and drag them into the order that matters most."
     ],
     [
       "Skip Length, your way",
-      "Set Skip Length for skipping back and forward separately, from 10 seconds up to a minute and a half. Give each show its own: long jumps past the ads on one, short hops back on another. A show can keep its own speed and download rules too."
+      "Set Skip Length for skipping back separately from skipping ahead, from 10 seconds up to a minute and a half."
     ],
     [
-      "Voice Boost and Trim Silence",
-      "Voice Boost evens out the volume, so a quiet guest sounds as close as a loud host. Trim Silence shortens long pauses, so episodes finish sooner without anyone sounding sped up."
+      "Every show, its own settings",
+      "Give each show its own Skip Length, playback speed, Trim Silence and auto-download settings: long jumps past the ads and 1.5x on one, short hops back at normal speed on another, and new episodes downloaded only for the shows you want."
     ],
     [
       "Bookmarks and a sleep timer",
@@ -28,6 +28,14 @@
     [
       "Lock screen, home screen and car",
       "Control Echo from the lock screen, earbuds or Android Auto, and add home-screen widgets for your Queue, a playlist, new episodes or your listening stats."
+    ],
+    [
+      "Playlists for anything",
+      "Make your own playlists, like one for a road trip or one for a topic you are digging into. An episode can be in several, they play straight through in your order, and unlike the Queue, an episode stays after you play it."
+    ],
+    [
+      "Stats and Listening History",
+      "See your listening time, shows listened, episodes completed and the time you saved with faster speeds, skipped ads and Trim Silence, for today, this week, this month, this year or all time, plus a calendar of your listening and your top 10 shows. Listening History lists every episode you played, searchable by show, episode or date, so you can pick up where you left off."
     ]
   ],
   "data": [
@@ -57,7 +65,7 @@
         ],
         [
           "Connect your AI (coming soon)",
-          "Connect your own AI app, so you can talk to it about your shows and listening, and it makes changes only when you say so."
+          "Connect your own AI app, so you can talk to it about your shows and listening, have it suggest new podcasts for you to listen to, and it makes changes only when you say so."
         ],
         [
           "Daily Backup",
