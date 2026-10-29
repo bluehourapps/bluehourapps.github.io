@@ -79,9 +79,13 @@
     ]
   ],
   "shotLabels": {
-    "1-library.jpg": "Your library",
-    "2-skip-interval.jpg": "Skip Length for each show",
-    "3-queue.jpg": "A Queue that fills itself",
-    "4-now-playing.jpg": "Voice Boost, sleep and bookmarks"
+    "1-add.jpg": "Find a show",
+    "2-library.jpg": "Your library",
+    "3-skip-length.jpg": "Skip Length for each show",
+    "4-queue.jpg": "A Queue that fills itself",
+    "5-now-playing.jpg": "Voice Boost, sleep and bookmarks",
+    "6-playlists.jpg": "Playlists for anything",
+    "7-bookmarks.jpg": "Bookmarks",
+    "9-listening-history.jpg": "Listening History"
   }
 }
