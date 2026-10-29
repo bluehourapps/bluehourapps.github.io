@@ -172,7 +172,15 @@ ${cfg.plans.map(p => `        <li><b>${esc(p[0])}</b>${Array.isArray(p[1]) ? `<u
     </div>
   </section>
 ` : ''}
-  <section id="data">
+${cfg.extra ? `  <section id="${cfg.extra.id}">
+    <div class="wrap narrow">
+      <h2>${esc(cfg.extra.title)}</h2>
+      <div class="card">
+${cfg.extra.items.map(p => Array.isArray(p) ? `        <h3>${esc(p[0])}</h3><p>${esc(p[1])}</p>` : `        <p>${esc(p)}</p>`).join(String.fromCharCode(10))}
+      </div>
+    </div>
+  </section>
+` : ''}  <section id="data">
     <div class="wrap narrow">
       <h2>Your data</h2>
       <div class="card">

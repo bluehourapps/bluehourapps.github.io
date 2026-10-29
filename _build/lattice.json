@@ -8,7 +8,7 @@
   "features": [
     [
       "A food diary that keeps up",
-      "Search a big food database, scan a barcode, or snap a nutrition label or upload a screenshot of one, and log it in a couple of taps. Mark a day complete when you're done, so you know which days count."
+      "Search a big food database or scan a barcode, and log it in a couple of taps. Add your own AI key and Lattice reads a nutrition label from a photo or screenshot too. Mark a day complete when you're done."
     ],
     [
       "Recipes and favorites",
@@ -24,7 +24,7 @@
     ],
     [
       "Your lab results, explained",
-      "Enter a result once, from 147 tests, or import a screenshot of your results. Lattice flags it high, low or normal from your lab's own range, charts it over the years and explains 135 tests in plain English."
+      "Enter results from 147 tests, or add your own AI key and Lattice reads them from a screenshot. It flags each one high, low or normal by your lab's own range, charts it over the years and explains 135 in plain English."
     ],
     [
       "A report for your provider",
@@ -44,7 +44,7 @@
     ],
     [
       "Every supplement you take",
-      "Add each supplement with its brand, dose and how often, or scan its Supplement Facts label. Log doses as taken or missed, and see your daily total of 28 nutrients as % of daily value."
+      "Add each supplement with its brand, dose and how often, or add your own AI key and Lattice reads its Supplement Facts label for you. Log doses as taken or missed, and see your daily total of 28 nutrients as % of daily value."
     ],
     [
       "Goals and Adaptive TDEE",
