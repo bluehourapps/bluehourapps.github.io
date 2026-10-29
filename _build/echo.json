@@ -7,7 +7,7 @@
   "features": [
     [
       "A Queue that fills itself, in your order",
-      "Star a show and its new episodes join your Queue on their own. Sort it by date, episode length, podcast name or author, or auto-queued first, and stack several sorts in the order you want."
+      "Star a show and its new episodes automatically join your Queue in the order you set. Sort by date, episode length, podcast name or author, or auto-queued first, and stack several sorts in the order you want."
     ],
     [
       "Skip Length, your way",
