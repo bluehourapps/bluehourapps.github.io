@@ -1,0 +1,78 @@
+{
+  "name": "Rainquail",
+  "color": "#ae5e1c",
+  "eyebrow": "Sprinkler manager for Android",
+  "pitch": "Your sprinklers, your yard, and just the right amount of water.",
+  "lead": "Your sprinklers, your yard, and just the right amount of water. Rainquail runs your Rain Bird Wi-Fi controller over your own home network, maps every head in your yard, and reads the forecast so each zone gets what it needs.",
+  "features": [
+    [
+      "Your yard, mapped",
+      "Put your yard plan or a photo from above in the app, then pin every sprinkler head, valve box and the main shutoff where it really is. Tap any of them to see its zone, its parts and its photos."
+    ],
+    [
+      "Programs you can read",
+      "Programs A to D show their days, start times and each zone's minutes in plain words. Edit one and Rainquail sums up exactly what will change before it saves, and flags start times that overlap."
+    ],
+    [
+      "The week ahead, day by day",
+      "This week's watering lists each day's programs, zones and times for the next 7 days, and marks any run that lands in your city's no-watering window or a rain delay."
+    ],
+    [
+      "Watering that reads the forecast",
+      "Each week Rainquail checks the coming days' heat and rain against what your lawn needs, and shows how many minutes each zone really needs. Each zone is marked Over, Under or About right."
+    ],
+    [
+      "Know what each zone puts down",
+      "A quick catch-cup test tells Rainquail how many inches an hour each zone waters, so its advice fits your heads and your water pressure, not a guess."
+    ],
+    [
+      "Every part, by zone",
+      "The Parts list shows every head's maker, model, nozzle and arc, with counts, ready to share as text or a spreadsheet when it's time to buy replacements."
+    ]
+  ],
+  "data": [
+    "Everything lives on your phone, and Rainquail talks to your controller over your own home Wi-Fi. Daily Backup saves a copy to your own Google Drive, where only Rainquail can see the files it made.",
+    "Weather comes from your ZIP code, never your phone's location."
+  ],
+  "legal": false,
+  "plans": [
+    [
+      "Free",
+      "Every feature on your phone, with no sign-in needed."
+    ],
+    [
+      "Daily Backup (a one-time purchase)",
+      "Buy once and keep it for good: a copy of your yard, zones and programs to your own Google Drive every day, at a time you pick, and whenever you ask."
+    ],
+    [
+      "Sync (monthly or yearly)",
+      [
+        [
+          "More than one phone",
+          "Use Rainquail on more than one phone. A change on one shows on the others."
+        ],
+        [
+          "New phone, same yard",
+          "A new phone has your whole yard."
+        ],
+        [
+          "Connect your AI (coming soon)",
+          "Connect your own AI app, so you can talk to it about your sprinklers, and it makes changes only when you say so."
+        ],
+        [
+          "Daily Backup",
+          "Included."
+        ]
+      ]
+    ]
+  ],
+  "shotLabels": {
+    "1-yard.jpg": "Your yard, every head pinned",
+    "2-programs.jpg": "Programs in plain words",
+    "3-this-weeks-watering.jpg": "The week ahead",
+    "4-zones.jpg": "Every zone at a glance",
+    "5-watering-advice.jpg": "Minutes from the forecast",
+    "6-zone-detail.jpg": "Heads and catch-cup tests",
+    "7-parts-list.jpg": "Every part, by zone"
+  }
+}
