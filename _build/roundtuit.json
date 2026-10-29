@@ -7,7 +7,7 @@
   "features": [
     [
       "Everything has a place",
-      "Sort jobs into categories like Home, Garden or Errands, then add your own. Each task can carry a due date, notes, cost and time spent."
+      "Sort tasks into categories like Home, Garden or Errands, or add your own custom categories. Each task can carry several attributes: due date, notes, how often it repeats, cost, time spent and the date it was done. Use them all, or turn off the ones you don't need."
     ],
     [
       "Chores that come back",
@@ -19,7 +19,7 @@
     ],
     [
       "Lists you share",
-      "Share a list with the people you live with, and everyone sees the same jobs and who checked them off. Each person uses their own phone and their own account."
+      "Share a list with your friends, family or coworkers. Everyone sees the same tasks and who checked them off, and anyone on the list can add tasks to it. Each person uses their own phone and their own account."
     ],
     [
       "Let people ask",
