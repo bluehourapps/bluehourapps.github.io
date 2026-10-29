@@ -2,8 +2,8 @@
   "name": "Roundtuit",
   "color": "#e9a93a",
   "eyebrow": "To-do list for Android",
-  "pitch": "The to-do list for jobs you'll get to eventually.",
-  "lead": "The to-do list for jobs you'll get to eventually. Keep your own list, share one with the people you live with, and let them ask you for things. Eventually you'll get a roundtuit.",
+  "pitch": "The to-do list for tasks you'll get to eventually.",
+  "lead": "The to-do list for tasks you'll get to eventually. Keep your own list, share one with the people you live with, and let them ask you for things. Eventually you'll get a roundtuit.",
   "features": [
     [
       "Everything has a place",
@@ -67,7 +67,7 @@
   ],
   "legal": true,
   "shotLabels": {
-    "1-add.jpg": "Add a job in seconds",
+    "1-add.jpg": "Add a task in seconds",
     "2-list.jpg": "Everything in its place",
     "3-shared.jpg": "A list you share",
     "4-request.jpg": "Ask someone for a hand",
