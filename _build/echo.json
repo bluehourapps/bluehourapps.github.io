@@ -54,11 +54,9 @@
     ]
   ],
   "shotLabels": {
-    "1-queue.jpg": "A Queue that fills itself",
-    "2-now-playing.jpg": "Voice Boost, sleep and bookmarks",
-    "3-add-discover.jpg": "Find new shows",
-    "4-library.jpg": "Your library",
-    "5-skip-interval.jpg": "Skip Length for each show",
-    "6-themes.jpg": "Pick your look"
+    "1-library.jpg": "Your library",
+    "2-skip-interval.jpg": "Skip Length for each show",
+    "3-queue.jpg": "A Queue that fills itself",
+    "4-now-playing.jpg": "Voice Boost, sleep and bookmarks"
   }
 }
