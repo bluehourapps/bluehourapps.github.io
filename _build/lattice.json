@@ -20,7 +20,7 @@
     ],
     [
       "Log everything about your body",
-      "Weight as often as you like, 12 body measurements, blood pressure, mood check-ins, illnesses and symptoms pinned to a body map, immunizations and supplement doses, all on one health calendar."
+      "Weight as often as you like, 12 body measurements, blood pressure, your CPAP nights and AHI, mood check-ins, illnesses and symptoms pinned to a body map, immunizations and supplement doses, all on one health calendar."
     ],
     [
       "Your lab results, explained",
@@ -49,6 +49,10 @@
     [
       "Goals and Adaptive TDEE",
       "In Profile, set your target weight, calorie goal, macro split and weekly pace. Adaptive TDEE works out what you really burn from your own weigh-ins and food log over two weeks, so your targets fit you."
+    ],
+    [
+      "A report for your provider",
+      "Before a visit, Lattice builds a report with your weight trend, blood pressure, recent lab results with anything out of range flagged, sleep and CPAP, and the supplements you take. Customize it to what your provider cares about, then export it as a PDF to share with them."
     ]
   ],
   "plans": [
