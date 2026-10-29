@@ -26,8 +26,20 @@
       "Daily, weekly, every few days or any custom pattern, each linked to a bed or a single plant. A month calendar shows what's due, and a ticked reminder comes back on its next date."
     ],
     [
-      "Harvests and seasons, kept for good",
-      "Log each harvest from the plant you picked it from, at what it would have cost in the store. When a season ends, Roots writes a report: your best crop, your most productive bed and what to try next year."
+      "A journal that writes itself",
+      "Write notes about the whole garden, one bed or one plant, all in one searchable journal. Plantings, waterings, harvests and finished reminders add themselves, so the season's story is there without the typing."
+    ],
+    [
+      "Seasons, with a report at the end",
+      "Everything you do is tagged to its growing season. When a season ends, Roots writes a report: your total harvest, best crop, most productive bed, what went wrong and what to try next year."
+    ],
+    [
+      "Every harvest counted",
+      "Log each pick from the plant it came from, with weight, taste notes and up to 5 photos, at what it would have cost in the store. It all adds up by plant, bed, season and for good."
+    ],
+    [
+      "Insights and a Garden Score",
+      "A score from 0 to 100 for your whole garden, built from yield, watering, care and sun fit. Insights adds a weekly harvest chart, ranks your beds and suggests what to do next."
     ]
   ],
   "data": [
