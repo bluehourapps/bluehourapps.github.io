@@ -32,6 +32,7 @@
   ],
   "data": [
     "Everything lives on your phone, and Rainquail talks to your controller over your own home Wi-Fi. Daily Backup saves a copy to your own Google Drive, where only Rainquail can see the files it made.",
+    "Your controller password or PIN is kept in Android's encrypted storage on your phone. Rainquail uses it only to lock what it sends to your controller over your home Wi-Fi. It never goes anywhere else, and it's never in an export or backup.",
     "Weather comes from your ZIP code, never your phone's location."
   ],
   "legal": false,
@@ -81,11 +82,15 @@
     "items": [
       [
         "Run your sprinklers from Rainquail",
-        "Rain Bird ESP-Me with a Wi-Fi module, set up in Rain Bird's original app (not the newer Rain Bird 2.0 app). More Rain Bird models will be added here as each one is confirmed."
+        "Rain Bird Wi-Fi controllers set up in Rain Bird's original app. Confirmed so far: the ESP-Me with a Wi-Fi module. More models will be listed here as each one is confirmed."
+      ],
+      [
+        "Rain Bird 2.0 app",
+        "Rain Bird controllers set up in the newer Rain Bird 2.0 app should work too, and are being confirmed. You enter the controller's 6-digit PIN once, and Rainquail talks to it over your home Wi-Fi."
       ],
       [
         "Every other controller",
-        "Rainquail still does everything else: map your yard, add and save your programs and zones, plan the week, read the forecast and keep your parts list. It just has no Run or Stop buttons, and you set your controller by hand."
+        "Rainquail still does everything else: map your yard, add and save your programs and zones, plan the week, read the forecast and keep your parts list. Your controller runs the watering, and you set it by hand."
       ]
     ]
   }
