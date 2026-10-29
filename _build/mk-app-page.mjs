@@ -57,7 +57,7 @@ body { background: var(--bg); color: var(--ink); font: 17px/1.65 var(--f-body); 
 .sky nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 44px; flex-wrap: wrap; }
 .foxtile { background: #fff; border-radius: 11px; box-shadow: 0 2px 10px rgba(5,12,30,.35); }
 .mark { display: flex; align-items: center; gap: 10px; font: 700 1.05rem var(--f-display); letter-spacing: .01em; color: inherit; text-decoration: none; }
-.sky nav ul { list-style: none; display: flex; gap: 18px; margin: 0; padding: 0; font-size: .9rem; }
+.sky nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0; padding: 0; font-size: .9rem; }
 .sky nav a { color: #d5e3fa; text-decoration: none; }
 .sky nav ul a:hover, .sky nav ul a:focus-visible { color: #fff; text-decoration: underline; }
 .hero { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: center; }
@@ -125,7 +125,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
       <a class="mark" href="../">${logo}
         Blue Hour
       </a>
-      <ul><li><a href="#features">Features</a></li><li><a href="#data">Your data</a></li><li><a href="../#apps">All apps</a></li></ul>
+      <ul>${shots.length ? '<li><a href="#app">The App</a></li>' : ''}<li><a href="#features">Features</a></li>${cfg.plans ? '<li><a href="#plans">Plans</a></li>' : ''}<li><a href="#data">Your data</a></li><li><a href="../#apps">All apps</a></li></ul>
     </nav>
     <div class="hero">
       <img class="ico" src="icon.png" alt="" width="84" height="84">
@@ -141,7 +141,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 </header>
 
 <main>
-${shots.length ? `  <section aria-label="Screenshots">
+${shots.length ? `  <section id="app" aria-label="Screenshots">
     <div class="wrap">
       <div class="shotbox">
         <button class="nav prev" type="button" aria-label="Previous screenshot" hidden>‹</button>
@@ -163,7 +163,7 @@ ${cfg.features.map((f, i) => `        <li><span class="n">${i + 1}</span><h3>${e
     </div>
   </section>
 
-${cfg.plans ? `  <section>
+${cfg.plans ? `  <section id="plans">
     <div class="wrap narrow">
       <h2>Free, with a couple of extras</h2>
       <div class="card"><ul class="plans">
