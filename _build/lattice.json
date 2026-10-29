@@ -25,10 +25,6 @@
     [
       "A Daily Backup to your own Drive",
       "For a one-time price, Lattice saves a backup to your Google Drive every day. It can only see the files it makes itself."
-    ],
-    [
-      "Ask your own AI about it (coming soon)",
-      "With Lattice Connect, your AI app can read your data and suggest changes. Nothing changes until you approve it, and you can see everything it read and did."
     ]
   ],
   "plans": [
@@ -42,7 +38,16 @@
     ],
     [
       "Lattice Connect (monthly or yearly)",
-      "Connect Lattice to your own AI app, so you can ask it about your data. When it suggests a change, nothing happens until you approve it there."
+      [
+        [
+          "Connect your AI",
+          "Connect Lattice to your own AI app, so you can ask it about your data."
+        ],
+        [
+          "You approve every change",
+          "When it suggests a change, nothing happens until you approve it there."
+        ]
+      ]
     ]
   ],
   "data": [

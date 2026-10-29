@@ -28,10 +28,6 @@
     [
       "Lock screen, home screen and car",
       "Control Echo from the lock screen, earbuds or Android Auto, and add home-screen widgets for your Queue, a playlist, new episodes or your listening stats."
-    ],
-    [
-      "Ask your own AI about it (coming soon)",
-      "Connect the AI app you already use, then ask it what you have queued, what you finished this month, or to tidy up your shows. It makes changes only when you say so, and you can see everything it read and did."
     ]
   ],
   "data": [
@@ -50,7 +46,24 @@
     ],
     [
       "Sync (monthly or yearly)",
-      "Use Echo on all your devices, your phone and tablet alike. Your library, progress and Queue stay in step between them as you listen, and a new phone picks up right where you left off. Coming soon with Sync: connect your own AI app, so you can talk to it about your shows and listening and it can make changes when you say so. Includes Daily Backup."
+      [
+        [
+          "Every device",
+          "Use Echo on your phone and tablet alike."
+        ],
+        [
+          "Always in step",
+          "Your library, progress and Queue stay in step as you listen, and a new phone picks up right where you left off."
+        ],
+        [
+          "Connect your AI (coming soon)",
+          "Connect your own AI app, so you can talk to it about your shows and listening, and it makes changes only when you say so."
+        ],
+        [
+          "Daily Backup",
+          "Included."
+        ]
+      ]
     ]
   ],
   "shotLabels": {

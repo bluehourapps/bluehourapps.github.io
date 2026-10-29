@@ -90,6 +90,9 @@ a { color: var(--accent); }
 .plans li { display: grid; gap: 2px; }
 .plans b { font-weight: 600; }
 .plans span { color: var(--muted); font-size: .96rem; }
+.plans .pts { margin: 4px 0 0; padding-left: 1.2em; display: grid; gap: 4px; color: var(--muted); font-size: .96rem; }
+.plans .pts li { display: list-item; }
+.plans .pts b { color: var(--ink, inherit); }
 footer { padding-block: 48px 56px; color: var(--muted); font-size: .88rem; }
 footer a { color: var(--muted); }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -147,7 +150,6 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
         <li><span class="n">4</span><h3>Bookmarks and a sleep timer</h3><p>Save a moment in one tap and jump back to it later. The sleep timer stops after 30 or 60 minutes, at the end of the episode, or at a time you pick.</p></li>
         <li><span class="n">5</span><h3>Find shows and single episodes</h3><p>Search by name, browse categories or the top charts, or paste a private feed link from a paid service. Search Episodes finds an episode on any topic without following the whole show.</p></li>
         <li><span class="n">6</span><h3>Lock screen, home screen and car</h3><p>Control Echo from the lock screen, earbuds or Android Auto, and add home-screen widgets for your Queue, a playlist, new episodes or your listening stats.</p></li>
-        <li><span class="n">7</span><h3>Ask your own AI about it (coming soon)</h3><p>Connect the AI app you already use, then ask it what you have queued, what you finished this month, or to tidy up your shows. It makes changes only when you say so, and you can see everything it read and did.</p></li>
       </ul>
     </div>
   </section>
@@ -158,7 +160,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
       <div class="card"><ul class="plans">
         <li><b>Free</b><span>Every feature on your phone, with no ads and no account.</span></li>
         <li><b>Daily Backup (a one-time purchase)</b><span>Everything in Echo (shows, progress, Queue, playlists, bookmarks and history) backed up to your own Google Drive every day at a time you pick, or whenever you ask.</span></li>
-        <li><b>Sync (monthly or yearly)</b><span>Use Echo on all your devices, your phone and tablet alike. Your library, progress and Queue stay in step between them as you listen, and a new phone picks up right where you left off. Coming soon with Sync: connect your own AI app, so you can talk to it about your shows and listening and it can make changes when you say so. Includes Daily Backup.</span></li>
+        <li><b>Sync (monthly or yearly)</b><ul class="pts"><li><b>Every device:</b> Use Echo on your phone and tablet alike.</li><li><b>Always in step:</b> Your library, progress and Queue stay in step as you listen, and a new phone picks up right where you left off.</li><li><b>Connect your AI (coming soon):</b> Connect your own AI app, so you can talk to it about your shows and listening, and it makes changes only when you say so.</li><li><b>Daily Backup:</b> Included.</li></ul></li>
       </ul></div>
     </div>
   </section>

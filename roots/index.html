@@ -90,6 +90,9 @@ a { color: var(--accent); }
 .plans li { display: grid; gap: 2px; }
 .plans b { font-weight: 600; }
 .plans span { color: var(--muted); font-size: .96rem; }
+.plans .pts { margin: 4px 0 0; padding-left: 1.2em; display: grid; gap: 4px; color: var(--muted); font-size: .96rem; }
+.plans .pts li { display: list-item; }
+.plans .pts b { color: var(--ink, inherit); }
 footer { padding-block: 48px 56px; color: var(--muted); font-size: .88rem; }
 footer a { color: var(--muted); }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -148,7 +151,6 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
         <li><span class="n">4</span><h3>Watering that reads the forecast</h3><p>Each week Roots checks the coming days' heat, humidity and rain, and works out which days each bed needs water and roughly how many gallons. Frost and heat alerts name the beds at risk.</p></li>
         <li><span class="n">5</span><h3>Reminders that repeat like a calendar</h3><p>Daily, weekly, every few days or any custom pattern, each linked to a bed or a single plant. A month calendar shows what's due, and a ticked reminder comes back on its next date.</p></li>
         <li><span class="n">6</span><h3>Harvests and seasons, kept for good</h3><p>Log each harvest from the plant you picked it from, at what it would have cost in the store. When a season ends, Roots writes a report: your best crop, your most productive bed and what to try next year.</p></li>
-        <li><span class="n">7</span><h3>Ask your own AI about it (coming soon)</h3><p>Connect the AI app you already use, then ask it what needs doing in the garden this week, or have it log a planting. It makes changes only when you say so, and you can see everything it read and did.</p></li>
       </ul>
     </div>
   </section>
@@ -159,7 +161,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
       <div class="card"><ul class="plans">
         <li><b>Free</b><span>Every feature on your phone, with no sign-in needed.</span></li>
         <li><b>Daily Backup (a one-time purchase)</b><span>Buy once and keep it for good: a copy of your garden to your own Google Drive every day, at a time you pick, and whenever you ask.</span></li>
-        <li><b>Sync (monthly or yearly)</b><span>Use Roots on all your devices, your phone and tablet alike. A change on one shows on the others, and a new phone has your whole garden. Coming soon with Sync: connect your own AI app, so you can talk to it about your garden and it can make changes when you say so. Includes Daily Backup.</span></li>
+        <li><b>Sync (monthly or yearly)</b><ul class="pts"><li><b>Every device:</b> Use Roots on your phone and tablet alike. A change on one shows on the others.</li><li><b>New phone, same garden:</b> A new phone has your whole garden.</li><li><b>Connect your AI (coming soon):</b> Connect your own AI app, so you can talk to it about your garden, and it makes changes only when you say so.</li><li><b>Daily Backup:</b> Included.</li></ul></li>
       </ul></div>
     </div>
   </section>

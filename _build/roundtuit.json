@@ -28,10 +28,6 @@
     [
       "See what you got done",
       "The Metrics tab adds up what you've added and finished, plus the cost and time spent, by category, list or person."
-    ],
-    [
-      "Ask your own AI about it (coming soon)",
-      "Connect the AI app you already use, then ask it what is overdue, or tell it to add a job or check one off. It makes changes only when you say so, and you can see everything it read and did."
     ]
   ],
   "plans": [
@@ -45,7 +41,24 @@
     ],
     [
       "Sync (monthly or yearly)",
-      "Use Roundtuit on all your devices, your phone and tablet alike, with your list in step between them. Sync also lets you make shared lists and invite people to ask you for things. Coming soon with Sync: connect your own AI app, so you can talk to it about your list and it can make changes when you say so. Includes Daily Backup."
+      [
+        [
+          "Every device",
+          "Use Roundtuit on your phone and tablet alike, with your list in step between them."
+        ],
+        [
+          "Shared lists",
+          "Make lists you share, and invite people to ask you for things."
+        ],
+        [
+          "Connect your AI (coming soon)",
+          "Connect your own AI app, so you can talk to it about your list, and it makes changes only when you say so."
+        ],
+        [
+          "Daily Backup",
+          "Included."
+        ]
+      ]
     ]
   ],
   "data": [

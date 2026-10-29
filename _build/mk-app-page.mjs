@@ -107,6 +107,9 @@ a { color: var(--accent); }
 .plans li { display: grid; gap: 2px; }
 .plans b { font-weight: 600; }
 .plans span { color: var(--muted); font-size: .96rem; }
+.plans .pts { margin: 4px 0 0; padding-left: 1.2em; display: grid; gap: 4px; color: var(--muted); font-size: .96rem; }
+.plans .pts li { display: list-item; }
+.plans .pts b { color: var(--ink, inherit); }
 footer { padding-block: 48px 56px; color: var(--muted); font-size: .88rem; }
 footer a { color: var(--muted); }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -164,7 +167,7 @@ ${cfg.plans ? `  <section>
     <div class="wrap narrow">
       <h2>Free, with a couple of extras</h2>
       <div class="card"><ul class="plans">
-${cfg.plans.map(p => `        <li><b>${esc(p[0])}</b><span>${esc(p[1])}</span></li>`).join('\n')}
+${cfg.plans.map(p => `        <li><b>${esc(p[0])}</b>${Array.isArray(p[1]) ? `<ul class="pts">${p[1].map(([k, v]) => `<li><b>${esc(k)}:</b> ${esc(v)}</li>`).join('')}</ul>` : `<span>${esc(p[1])}</span>`}</li>`).join('\n')}
       </ul></div>
     </div>
   </section>

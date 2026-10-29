@@ -28,10 +28,6 @@
     [
       "Harvests and seasons, kept for good",
       "Log each harvest from the plant you picked it from, at what it would have cost in the store. When a season ends, Roots writes a report: your best crop, your most productive bed and what to try next year."
-    ],
-    [
-      "Ask your own AI about it (coming soon)",
-      "Connect the AI app you already use, then ask it what needs doing in the garden this week, or have it log a planting. It makes changes only when you say so, and you can see everything it read and did."
     ]
   ],
   "data": [
@@ -50,7 +46,24 @@
     ],
     [
       "Sync (monthly or yearly)",
-      "Use Roots on all your devices, your phone and tablet alike. A change on one shows on the others, and a new phone has your whole garden. Coming soon with Sync: connect your own AI app, so you can talk to it about your garden and it can make changes when you say so. Includes Daily Backup."
+      [
+        [
+          "Every device",
+          "Use Roots on your phone and tablet alike. A change on one shows on the others."
+        ],
+        [
+          "New phone, same garden",
+          "A new phone has your whole garden."
+        ],
+        [
+          "Connect your AI (coming soon)",
+          "Connect your own AI app, so you can talk to it about your garden, and it makes changes only when you say so."
+        ],
+        [
+          "Daily Backup",
+          "Included."
+        ]
+      ]
     ]
   ],
   "shotLabels": {
