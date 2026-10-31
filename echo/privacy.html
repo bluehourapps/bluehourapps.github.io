@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Echo: Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --bg: #ffffff; --fg: #1d2330; --muted: #5a6475; --accent: #6b4fd8; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0d0b1a; --fg: #ecebf7; --muted: #a29fc0; --accent: #a996ff; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.1rem; margin: 28px 0 6px; }
+  .muted { color: var(--muted); font-size: 0.9rem; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Echo: Privacy Policy</h1>
+  <p class="muted">Last updated 2026-10-31</p>
+
+  <p>Echo is a podcast player for Android, made by Blue Hour. Nothing is sold, and there are no ads.</p>
+
+  <h2>On your phone</h2>
+  <ul>
+    <li>Your library is stored on your phone: the shows you follow and their episodes, your Queue, playlists, bookmarks, listening progress and history, listening stats, your settings and the optional profile you fill in (display name, gender, birth month and year).</li>
+    <li>Downloaded audio and widgets stay on each phone. So do a few settings that are never uploaded: tap strength, the overall download limit, the Wi-Fi-only switches and the Stats period.</li>
+  </ul>
+
+  <h2>Google sign-in (optional)</h2>
+  <ul>
+    <li>You don't have to sign in. Echo works fully on your phone without an account, and it asks you to sign in with Google only when you choose a plan that needs it: Daily Backup or Echo Sync.</li>
+    <li>When you sign in, Google gives Echo your account's name and email address, used only to identify your account and look up which Echo plan goes with it. One Google account is used for both Echo Sync and Google Drive Backup.</li>
+    <li>While you're signed in, your optional profile is saved to your account, on any plan, so a new phone you sign in on gets it back. Only you can read it.</li>
+    <li>You can sign out at any time in Settings. Signing out deletes none of your library.</li>
+  </ul>
+
+  <h2>Google Drive Backup (optional)</h2>
+  <ul>
+    <li>Echo asks only for access to the files it makes itself in your Google Drive, and nothing else there. It cannot see your other Drive files, Gmail or contacts.</li>
+    <li>Backups go in an "Echo Backup" folder you can open in Drive like any other, with older backups in its "Archive" folder; the last 7 are kept. Each backup notes the phone model that made it, so your other phones can show where your latest backup came from.</li>
+    <li>Restoring a backup only adds what the phone is missing. It never changes or removes anything.</li>
+  </ul>
+
+  <h2>Echo Sync and Echo's server (optional)</h2>
+  <ul>
+    <li>With Echo Sync, your library (the podcast data above, with listening stats kept per phone) is kept in your private Echo account in a cloud database (Supabase), with a random ID for each phone so changes from your phones can be told apart. Row-level security limits each row to its own account, and data is encrypted in transit and at rest.</li>
+    <li>When you delete something with Echo Sync on, a small marker (such as a removed show's feed address) stays in your account so your other phones remove it too.</li>
+    <li>For switching devices: each device's name and, for each, the episode, the spot in it and whether it is playing. A device's entry is deleted 180 days after it was last used, or with your Echo Sync library.</li>
+    <li>For Play on: each phone's push token from Google's Firebase Cloud Messaging, with the Echo version that sent it, so Echo's server can reach that phone. No app or other account can read it. It is deleted when that phone signs out (or at its next online start), when its device entry is deleted, when Google reports it no longer works, or with your account. Firebase gives every install a token, but only Echo Sync sends it to the server.</li>
+    <li>A short record of each Play on request (which of your phones sent it, to which phone, and whether it went through; never the episode) is kept for about a day, until a later request clears it.</li>
+    <li>When signed in, the server also holds which Echo plan goes with your account's email address.</li>
+    <li>If Echo Sync ends, your Echo Sync library is kept until the 1st of the month after your next full month, then deleted (ends October 1: deleted November 1; ends October 2 to 31: deleted December 1). Starting Echo Sync again before then brings it all back. Nothing on your phone is affected.</li>
+  </ul>
+
+  <h2>AI connector (optional)</h2>
+  <ul>
+    <li>You don't have to use it. With Echo Sync, you can connect your own AI app, such as Claude, ChatGPT or Gemini, to your Echo account through the connector address in Settings.</li>
+    <li>Once you sign in to it from that app, your AI app can read your library (shows, episodes, Queue, listening progress and history) and search Podcast Index for shows (only the search words are sent). It can follow or remove a show, or add to or reorder your Queue, only after you say yes in your AI app, and it can play, pause or skip on your phone when you ask.</li>
+    <li>What you say to your AI app stays with that app and its own privacy policy. Echo never receives the chat.</li>
+    <li>For your safety, Echo keeps a line for each thing your AI app read or changed (when, what, which AI app, and whether the request came from that AI company's published addresses), shown in Settings and kept for 90 days. Echo never stores the internet address a request came from. For a request it can't match to your AI app, it keeps only a rough place (such as a city and country), looked up on Echo's own lookup service, which is sent only the address and keeps nothing.</li>
+    <li>A change you approve, or a play, pause or skip you ask for, waits on Echo's server until your phone does it (at most 7 days for a change, 5 minutes for playback) and is deleted 30 days after it ends. While Echo Sync is on, your phone checks for these and sends its time zone (such as America/Chicago), so the days your AI app talks about are your own.</li>
+    <li>Sign out all AI apps in Settings ends every AI app's access at once. Access also ends after 90 days without use, after 180 days in any case, and when your plan no longer includes it. Wipe all data deletes these lines and signs every AI app out; Delete account removes everything the connector keeps.</li>
+  </ul>
+
+  <h2>Feedback (optional)</h2>
+  <p>Only when you tap Submit in About Echo → Send feedback: your message, the Echo version, your plan, and your phone's make, model and Android version. If you're signed in, it also includes your account email and user ID; when you're not, you can add an email address if you'd like a reply. It is stored in Echo's database and emailed to Echo's feedback inbox through Google's Gmail. Feedback sent while signed in is deleted with your account.</p>
+
+  <h2>Who else is involved</h2>
+  <ul>
+    <li>Podcast episodes and artwork are downloaded straight from each show's own host, as with any podcast app. Echo doesn't see or store the audio.</li>
+    <li>Podcast search and Discover go through Echo's own server, which asks Podcast Index on Echo's behalf. It sends the search words, the category and language you pick, and Apple's show ID for Search Episodes' language check. No account data is sent.</li>
+    <li>Apple: Search Episodes, Discover's Top Podcasts charts and show details go straight from your phone to itunes.apple.com, with rss.marketingtools.apple.com as the backup chart. They carry only the search words, the chart or category, Apple's show IDs and the US store; no account, email, name or Echo ID. Show artwork loads from Apple, and a Listen on Apple Podcasts link opens only when you tap it.</li>
+    <li>Play on uses Google's Firebase Cloud Messaging to deliver one message to the phone you picked. It carries the episode's ID from its feed, the spot to start from, the sending phone's name, your Echo account ID, a request ID and the time it was sent; nothing else from your account.</li>
+    <li>Purchases are handled by Google Play, and RevenueCat records which plan your account has and when it renews. Echo never sees card details.</li>
+  </ul>
+
+  <h2>What it doesn't do</h2>
+  <p>Nothing is sold or used for advertising. There are no ads, analytics or tracking tools, and Echo doesn't collect your location, contacts, microphone or camera.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Settings → Data shows what Echo holds, and Export my data saves a copy as a JSON file.</li>
+    <li>Wipe all data removes your library from this phone and, when you're signed in, from your Echo account (and with Echo Sync on, from every phone signed in to it); your account, plan and settings stay.</li>
+    <li>Delete account (when signed in) removes your Echo account and everything Echo keeps for it. It removes only Echo's data: another Blue Hour app you use with the same Google account keeps its own. Your Google Drive backups stay in your Drive until you delete them.</li>
+    <li>You can also ask for your account and data to be deleted by emailing <a href="mailto:privacy@bluehourapps.dev">privacy@bluehourapps.dev</a>.</li>
+    <li>To remove Echo's access to your Google account: Google Account → Security → Third-party access → Echo → Remove access.</li>
+  </ul>
+
+  <h2>Age</h2>
+  <p>Echo is not meant for anyone under 13, and doesn't knowingly collect anything from children under 13.</p>
+
+  <h2>Contact</h2>
+  <p>Email Blue Hour at <a href="mailto:privacy@bluehourapps.dev">privacy@bluehourapps.dev</a>.</p>
+
+  <p class="muted"><a href="./">Echo home</a> · <a href="terms.html">Terms of use</a></p>
+</main>
+</body>
+</html>
