@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drive Tools: Privacy Policy · Blue Hour</title>
+<meta name="description" content="Privacy policy for Drive Tools, a private Blue Hour build-file cleanup tool.">
+<style>
+  :root { color-scheme: light dark; --bg: #f4f7fb; --fg: #142036; --muted: #55627a; --line: #dbe3ee; --accent: #2c5b9e; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0a1424; --fg: #e6edf7; --muted: #9aabc4; --line: #22324d; --accent: #8fb4ec; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.1rem; margin: 28px 0 6px; }
+  .muted { color: var(--muted); font-size: 0.9rem; }
+  a { color: var(--accent); }
+  ol, ul { padding-left: 1.3em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Drive Tools: Privacy Policy</h1>
+  <p class="muted">Last updated 2026-11-19</p>
+
+  <p>Drive Tools is a private tool used by one person, the developer, on their own laptop. It runs rclone to tidy app build files in Blue Hour's own Google Drive, keeping the newest builds and deleting older ones. It isn't offered to anyone else.</p>
+
+  <h2>What it can access</h2>
+  <ul>
+    <li>Blue Hour's own Google Drive, so it can list app build files and delete old ones.</li>
+    <li>The Google account's email address, to confirm which account was connected.</li>
+  </ul>
+
+  <h2>What it keeps</h2>
+  <ul>
+    <li>The access token Google issues, stored only on the developer's laptop and used only for this cleanup.</li>
+    <li>A short log of which build files it deleted, on the same laptop.</li>
+  </ul>
+
+  <h2>What it doesn't do</h2>
+  <p>Nothing is copied off the Drive, shared, sold, or used for any other purpose, and no one else's data is involved. No analytics, ads or tracking.</p>
+
+  <h2>Removing access</h2>
+  <p>Google Account → Security → Third-party access → rclone → Remove access. Cleanup stops straight away, and files already in Drive stay as they are.</p>
+
+  <h2>Contact</h2>
+  <p>Email Blue Hour at <a href="mailto:privacy@bluehourapps.dev">privacy@bluehourapps.dev</a>.</p>
+
+  <p class="muted"><a href="./">Drive Tools home</a></p>
+</main>
+</body>
+</html>
